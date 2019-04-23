@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelpController">
+   <children>
+      <VBox layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="81.0" prefWidth="600.0" text="Help (I've fallen and I can't get up) Menu" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="323.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="321.0" prefWidth="159.0">
+                     <children>
+                        <RadioButton fx:id="queryHelpButton" mnemonicParsing="false" onAction="#queryHelpHandler" text="Query Entry">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton fx:id="graphHelpButton" mnemonicParsing="false" onAction="#graphHelpHandler" text="Graph">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton fx:id="aboutHelpButton" mnemonicParsing="false" onAction="#aboutHelpHandler" text="About">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </VBox>
+                  <TextArea fx:id="helpText" editable="false" prefHeight="321.0" prefWidth="440.0" text="Choose a menu option to the left to learn about a specific part!" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

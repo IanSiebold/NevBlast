@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="biojava-ws-5.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/biojava-ws-5.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

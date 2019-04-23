@@ -1,0 +1,44 @@
+<html>
+<header>
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <script language="javascript">
+        //Check this out https://plot.ly/javascript/click-events/
+        function load(){
+            //Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/3d-scatter.csv', function(err, rows){
+            Plotly.d3.csv('data.csv', function(err, rows){
+                function unpack(rows, key) {
+                    return rows.map(function(row)
+                    {
+                        return row[key]; });}
+
+                var trace1 = {
+                    x:unpack(rows, 'x1'), y: unpack(rows, 'y1'), z: unpack(rows, 'z1'),
+                    mode: 'markers',
+                    marker: {
+                        size: 5,
+                        line: {
+                            color: 'rgba(217, 217, 217, 0.14)',
+                            width: 0.5},
+                        opacity: 0.8},
+                    type: 'scatter3d'
+                };
+
+                var data = [trace1];
+                var layout = {margin: {
+                        l: 0,
+                        r: 0,
+                        b: 0,
+                        t: 0
+                    }};
+                Plotly.newPlot('myDiv', data, layout);
+            });
+
+        }
+    </script>
+</header>
+<body onload="load()">
+</body>
+<div id="myDiv" style="width: 500px;height:400px"></div>
+</html>

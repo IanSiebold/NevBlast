@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="co.theasi:plotly_2.10:0.1" type="repository">
+    <properties maven-id="co.theasi:plotly_2.10:0.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/plotly_2.10-0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-library-2.10.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scalaj-http_2.10-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-native_2.10-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-core_2.10-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-ast_2.10-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-scalap_2.10-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/paranamer-2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

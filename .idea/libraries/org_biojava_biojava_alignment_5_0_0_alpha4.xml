@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="org.biojava:biojava-alignment:5.0.0-alpha4" type="repository">
+    <properties maven-id="org.biojava:biojava-alignment:5.0.0-alpha4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/biojava-alignment-5.0.0-alpha4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/biojava-core-5.0.0-alpha4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/forester-1.038.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j-impl-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/biojava-phylo-5.0.0-alpha4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/biojava-alignment-5.0.0-alpha4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/biojava-core-5.0.0-alpha4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/forester-1.038-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.20-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j-impl-2.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/biojava-phylo-5.0.0-alpha4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

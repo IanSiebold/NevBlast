@@ -1,0 +1,32 @@
+.root{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Georgia";
+    -fx-base: #393f4d;
+    -fx-background: #1d1e22;
+    -fx-focus-color: #d4d4dc;
+}
+
+.button{
+    -fx-text-fill: #1d1e22;
+    -fx-background-color: #feda6a;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.grid{
+    -fx-base: #d4d4dc;
+    -fx-focus-color: #d4d4dc;
+}
+
+.slider{
+    -fx-padding: 5px;
+    -fx-border-inserts: 5px;
+    -fx-background-insets: 5px;
+}
+
+.text-field, .text-area{
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}

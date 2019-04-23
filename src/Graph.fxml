@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.teamdev.jxbrowser.chromium.javafx.BrowserView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="668.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphController">
+    <children>
+      <Line endX="100.0" layoutY="500" startX="-100.0" />
+      <GridPane layoutY="499.0" prefHeight="169.0" prefWidth="871.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="sig1" text="." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="raw1" text="." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="norm1" text="." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="sig2" text="." GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="raw2" text="." GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="norm2" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label text="Signiture 1" GridPane.columnIndex="1" />
+            <Label text="Signiture 2" GridPane.columnIndex="2" />
+            <Label text="Label" />
+            <Label fx:id="hitSeq" text="Label" GridPane.rowIndex="1" />
+            <Label fx:id="eVal" text="Label" GridPane.rowIndex="2" />
+            <Label fx:id="vEss" text="Label" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+        <HBox prefHeight="502.0" prefWidth="892.0">
+            <children>
+                <AnchorPane fx:id="testPane" prefHeight="502.0" prefWidth="545.0">
+               <children>
+                  <BrowserView fx:id="browserView" prefHeight="500.0" prefWidth="525.0" />
+               </children></AnchorPane>
+                <VBox prefHeight="502.0" prefWidth="387.0">
+                    <children>
+                        <HBox prefHeight="46.0" prefWidth="254.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="270.0">
+                                    <HBox.margin>
+                                        <Insets left="5.0" top="9.0" />
+                                    </HBox.margin>
+                                </TextField>
+                                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Search">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="9.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <TableView fx:id="tableView" prefHeight="455.0" prefWidth="370.0">
+                            <columns>
+                                <TableColumn fx:id="nameC" prefWidth="223.0" text="Name" />
+                                <TableColumn prefWidth="44.0" text="X" fx:id="xC" />
+                                <TableColumn fx:id="yC" prefWidth="45.0" text="Y" />
+                                <TableColumn fx:id="zC" prefWidth="49.0" text="Z" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
